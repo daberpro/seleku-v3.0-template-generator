@@ -8,7 +8,7 @@ const PORT = 3000;
 
 server.use(express.static(__dirname+'/result/'));
 const expressServer = server.listen(PORT,'0.0.0.0',()=>{
-  console.log(`\n\n server starting on port ${PORT}`)
+  console.log(`\nserver starting on port ${PORT}\n`)
 });
 
 const wss = new WebSocketServer({server: expressServer});

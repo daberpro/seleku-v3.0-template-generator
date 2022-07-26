@@ -1,0 +1,20 @@
+import {Node} from 'seleku-v3.0/seleku-core'
+import './style.css'
+
+const Welcome = ()=>{
+	
+	let count = 14;
+	const counting = _=> count++;
+
+	<div class="container" id="app">
+		<div class="box">
+			<h1 class="title">Welcome To Seleku</h1>
+			<p>create by Ari susanto</p>
+			<h3>${count}</h3>
+			<button onclick={counting}>counting</button>
+		</div>
+	</div>
+
+}
+
+Node.Render(Welcome(),document.body);

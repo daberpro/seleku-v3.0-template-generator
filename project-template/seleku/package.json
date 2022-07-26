@@ -1,0 +1,19 @@
+{
+  "name": "seleku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.14.50",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "seleku-v3.0": "^1.0.1",
+    "ws": "^8.8.1"
+  }
+}

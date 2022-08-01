@@ -1,17 +1,45 @@
 import {Node} from 'seleku-v3.0/seleku-core'
-import './style.css'
+import seleku from './assets/seleku.png'
+
+const Card = ({about}) =>{
+	
+	const goto = _=>{
+		location.href = about.url;
+	}
+
+	<div class="card" onclick={goto}>
+		<h1>${about.title}</h1>
+		<h3>${about.description}</h1>
+	</div>
+}
 
 const Welcome = ()=>{
-	
+
 	let count = 14;
 	const counting = _=> count++;
+	let data = [
+		{
+			title: 'Github',
+			description: 'see my works',
+			url: 'https://github.com/daberpro'
+		},
+		{
+			title: 'Twitter',
+			description: 'check update from seleku',
+			url: 'https://twitter.com/daberdev'
+		}
+	]
 
 	<div class="container" id="app">
 		<div class="box">
 			<h1 class="title">Welcome To Seleku</h1>
+			<img style="width: 100px;" src={seleku}/>
 			<p>create by Ari susanto</p>
 			<h3>${count}</h3>
 			<button onclick={counting}>counting</button>
+		</div>
+		<div class="box-card" loop="data as _info">
+			<Card about={_info}></Card>
 		</div>
 	</div>
 

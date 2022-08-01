@@ -8,7 +8,7 @@ import chalk from 'chalk';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-console.log(chalk.bold.green("seleku"),chalk.bgWhite(chalk.bold.red(require('./package.json').version),"\n"));
+console.log(chalk.bold.green("seleku"),chalk.bgWhite(chalk.bold.red('V3.0'),"\n"));
 
 const CHOICES = fs.readdirSync(path.join(__dirname, 'project-template'));
 const QUESTIONS = [

@@ -1,19 +1,33 @@
 {
   "name": "create-seleku",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.4-1",
+  "description": "<div style=\"text-align: center;\">\r     <h1># Seleku v3.0 </h1>\r     <h4>\r         <u>by Ari Susanto</u>\r     </h4>\r     <br>\r     <a href=\"https://www.npmjs.com/package/seleku-v3.0\"><img src=\"https://img.shields.io/npm/v/seleku-v3.0.svg\"></a>\r     <a href=\"https://www.npmjs.com/package/seleku-v3.0\"><img src=\"https://img.shields.io/npm/dm/seleku-v3.0.svg\"></a>\r     <br>\r     <hr>\r     check my documentation here\r     <br>\r     <a href=\"https://docs.seleku.my.id\">\r         📔 Documentation\r     </a>\r </div>",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "seleku": "./index.js"
+    "seleku": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "daber",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.0.0",
+    "chalk": "^4.1.2",
     "inquirer": "^8.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daberpro/seleku-v3.0-template-generator.git"
+  },
+  "keywords": [
+    "seleku",
+    "seleku-kit",
+    "daberdev"
+  ],
+  "bugs": {
+    "url": "https://github.com/daberpro/seleku-v3.0-template-generator/issues"
+  },
+  "homepage": "https://github.com/daberpro/seleku-v3.0-template-generator#readme"
 }
